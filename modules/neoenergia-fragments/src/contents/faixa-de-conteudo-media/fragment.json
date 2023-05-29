@@ -4,5 +4,6 @@
   "htmlPath": "index.html",
   "jsPath": "main.js",
   "name": "Faixa de conteudo media",
-  "type": "component"
+  "type": "component",
+  "thumbnail": "thumbnail.png"
 }

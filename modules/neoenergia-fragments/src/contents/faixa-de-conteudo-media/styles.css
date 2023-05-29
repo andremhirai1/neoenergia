@@ -1,7 +1,117 @@
-.faixa-de-conteudo-media {
-  color: inherit;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+.neo_faixa_media_box {
+  height: 428px;
+  background: #213914;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_form_box {
+    height: 464px;
+  }
+}
+
+.neo_faixa_media_box__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 428px;
+  gap: 8.5625rem;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__container {
+    flex-direction: column;
+    height: 464px;
+    gap: 0;
+  }
+}
+
+.neo_faixa_media_box__text-info {
+  margin-top: 4rem;
+  width: 427px;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-info {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 90%;
+  }
+}
+
+.neo_faixa_media_box__text-info img,
+.neo_faixa_media_box__text-info picture {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-info img,
+  .neo_faixa_media_box__text-info picture {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.neo_faixa_media_box__text-box {
+  width: 314px;
+  height: 114px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-box {
+    width: 326px;
+    height: 56px;
+  }
+}
+
+.neo_faixa_media_box__text-box h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-box h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+.neo_faixa_media_box__text-description {
+  width: 427px;
+  margin-top: 4rem;
+  margin-bottom: auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-description {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    width: 90%;
+  }
+}
+
+.neo_faixa_media_box__text-description p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .neo_faixa_media_box__text-description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+  }
 }

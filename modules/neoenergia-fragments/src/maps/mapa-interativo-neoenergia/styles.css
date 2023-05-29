@@ -1,7 +1,101 @@
-.mapa-interativo-neoenergia {
-  color: inherit;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+.container-map {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 33.875rem;
+  width: 100%;
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.background-clip {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.background-clip video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#svg-map path {
+  fill: #afb5af;
+}
+#svg-map text {
+  fill: #fff;
+  font: 12px Arial-BoldMT, sans-serif;
+  cursor: pointer;
+}
+#svg-map a {
+  text-decoration: none;
+}
+#svg-map a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+#svg-map a:hover path {
+  fill: #fff !important;
+}
+
+.box-content {
+  padding: 0 0 0 56px;
+}
+
+.box-content .content-text p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.box-content .content-text .box-text {
+  height: 196px;
+  width: 338px;
+}
+
+.box-content .content-text h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.box-img {
+  color: white;
+}
+
+.box-info {
+  display: flex;
+  padding: 0 0 0 35px;
+  align-items: center;
+  background: #345423;
+  height: inherit;
+  width: 502px;
+  color: white;
+  font-family: "Lato";
+}
+
+.content_info {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.box-info .content_info p {
+  margin: 0;
+}
+
+.box-info .content_info h3 {
+  margin: 0;
 }
